@@ -45,7 +45,6 @@ window.onload = function() {
         }
         slider_rightBTN.addEventListener("click", ()=>{changeSlide(1)});
         slider_leftBTN.addEventListener("click", ()=>{changeSlide(-1)});
-        const autoSlider = setInterval(()=>{changeSlide(1)}, 15000);
         sliderDots.forEach ((item, num)=>{
             item.addEventListener('click', ()=>{
                 changeSlide(0, num);
