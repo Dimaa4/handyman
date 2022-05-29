@@ -774,7 +774,7 @@ header .bottom-header .b-header-right a:hover {
 }
 .footer-inner{
     background: rgba(57,57,58,0.97);
-    padding-top: 100px;
+    padding-top: 40px;
 }
 .footer-inner p{
     font-family: 'Roboto', sans-serif;
@@ -811,12 +811,65 @@ header .bottom-header .b-header-right a:hover {
 .footer__social-media-item:hover i{
     color: #fff;
 }
-
-
-
-
-
-
+.about-us__head-wrapper{
+    background: url(../img/about-us.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.about-us__head-wrapper::before{
+    background-color: rgba(25,25,25,0.9);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.about-us__head-inner{
+    height: 100%;
+    padding: 90px 0 90px 0;
+    text-align: center;
+}
+.about-us__head-inner h1{
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.about-us__main-wrapper{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.about-us__main-text, .about-us__main-img{
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.about-us__main-text p {
+    margin: 20px 15px 20px 0;
+    color: #676767;
+    line-height: 28px;
+    font-family: 'Hind', sans-serif;
+}
+.about-us__main-img{
+    margin-top: 40px;
+}
+.welcome-img{
+    width: 100%;
+}
+.about-us__main-img-inner{
+    position: relative;
+}
+.img-opacity{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background: rgba(0,0,0,0.3);
+}
 
 
 
@@ -959,7 +1012,15 @@ header .bottom-header .b-header-right a:hover {
         float: right;
         padding: 40px 15px 0 15px;
     }
-    
+    .about-us__main-text, .about-us__main-img{
+        width: 50%;
+    }
+    .about-us__main-text{
+        float: left;
+    }
+    .about-us__main-img{
+        float: right;
+    }
 }
 @media (min-width: 1200px){
     .container {

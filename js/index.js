@@ -2,7 +2,7 @@ window.onload = function() {
 
     // main slider start
     let slides = document.querySelectorAll(".main-slider__item");
-    if(slides){
+    if(document.querySelector(".main-slider__item")){
         let slider_leftBTN = document.querySelector(".slider-arrow__left");
         let slider_rightBTN = document.querySelector(".slider-arrow__right");
         let visibleSlide = 0;
@@ -58,8 +58,8 @@ window.onload = function() {
     window.addEventListener("scroll", (e)=>{
         let menu = document.querySelector(".main-menu");
         let goUPbtn = document.querySelector(".fixed-up");
-        let banner = document.querySelector(".banner");
-        if(banner.getBoundingClientRect().y <=-100){
+        let pageHead = document.querySelector(".page-head__wrapper");
+        if(pageHead.getBoundingClientRect().y <=-100){
             if(!menu.classList.contains("menu-fixed")){
                 menu.classList.add("menu-fixed");
                 goUPbtn.classList.add("visible");
