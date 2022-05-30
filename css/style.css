@@ -874,8 +874,8 @@ header .bottom-header .b-header-right a:hover {
     height: 430px;
 }
 .contact-us-wrapper{
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     background: #ededed;
 }
 .contact-us-inner{
@@ -955,7 +955,7 @@ header .bottom-header .b-header-right a:hover {
     background: #c48f12;
 }
 .services-wrapper{
-    padding: 80px 0;
+    padding: 40px 0;
     background: #ededed;
     margin-bottom: -80px;
 }
