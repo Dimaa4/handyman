@@ -876,7 +876,7 @@ header .bottom-header .b-header-right a:hover {
 .contact-us-wrapper{
     padding-top: 60px;
     padding-bottom: 40px;
-    background: #ededed;
+    background: #f8f8f8;
 }
 .contact-us-inner{
     display: flex;
@@ -963,7 +963,7 @@ header .bottom-header .b-header-right a:hover {
 }
 .services-wrapper{
     padding: 40px 0;
-    background: #ededed;
+    background: #f8f8f8;
     margin-bottom: -80px;
 }
 .services-inner{
