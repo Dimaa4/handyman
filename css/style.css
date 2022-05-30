@@ -898,6 +898,13 @@ header .bottom-header .b-header-right a:hover {
     gap: 15px;
     align-items: center;
 }
+.contact-us__info p{
+    color: #333333b0;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 30px 10px 40px 10px;
+    font-weight: 500;
+}
 .contact-info__item i{
     font-size: 32px;
     color: #ffb504;
