@@ -604,13 +604,13 @@ header .bottom-header .b-header-right a:hover {
     position: fixed;
     bottom: 20px;
     left: 5px;
-    z-index: 9999999;
+    z-index: 999;
 }
 .fixed-up{
     position: fixed;
     bottom: 30px;
     right: 15px;
-    z-index: 9999999;
+    z-index: 999;
     color: #ffb504;
     width: 45px;
     height: 45px;
@@ -1016,8 +1016,14 @@ header .bottom-header .b-header-right a:hover {
     position: absolute;
     left: 0;
 }
-
-
+.owl-carousel{
+    position: static !important;
+}
+.owl-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 
 

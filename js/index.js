@@ -89,6 +89,8 @@ window.onload = function() {
         return false;
     })
     // go up end
+
+    
 };
 
 
@@ -96,45 +98,55 @@ window.onload = function() {
 
 // owl carousel 
 $(document).ready(function(){
-    $('.gallery__owl-carousel').owlCarousel({
-        loop:true,
-        nav:true,
-        navText : ["<div class='carousel__arrow-btn'><i class='fa fa-chevron-left'></i></div>","<div class='carousel__arrow-btn'><i class='fa fa-chevron-right'></i></div>"],
-        dots:false,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplaySpeed:1000,
-        lazyLoad:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            651:{
-                items:2
-            },
-            992:{
-                items:4
+    if(document.querySelector(".gallery__owl-carousel")){
+        $(".gallery__owl-carousel").lightGallery({
+            thumbnail: true,
+        });
+        $('.gallery__owl-carousel').owlCarousel({
+            loop:false,
+            rewind: true,
+            nav:true,
+            navText : ["<div class='carousel__arrow-btn'><i class='fa fa-chevron-left'></i></div>","<div class='carousel__arrow-btn'><i class='fa fa-chevron-right'></i></div>"],
+            dots:false,
+            autoplay:true,
+            autoplayTimeout:7500,
+            autoplaySpeed:1000,
+            lazyLoad:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                651:{
+                    items:2
+                },
+                992:{
+                    items:4
+                }
             }
-        }
-    })
-    $('.feedback__owl-carousel').owlCarousel({
-        loop:true,
-        nav:true,
-        navContainer:".feedback-nav",
-        navText : ["<div class='carousel__arrow-btn feedback__arrow-btn'><i class='fa fa-chevron-left'></i></div>","<div class='carousel__arrow-btn feedback__arrow-btn'><i class='fa fa-chevron-right'></i></div>"],
-        dots:false,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplaySpeed:1000,
-        lazyLoad:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            992:{
-                items:2
+        })
+        
+    }
+    if(document.querySelector('.feedback__owl-carousel')){
+        $('.feedback__owl-carousel').owlCarousel({
+            loop:true,
+            nav:true,
+            navContainer:".feedback-nav",
+            navText : ["<div class='carousel__arrow-btn feedback__arrow-btn'><i class='fa fa-chevron-left'></i></div>","<div class='carousel__arrow-btn feedback__arrow-btn'><i class='fa fa-chevron-right'></i></div>"],
+            dots:false,
+            autoplay:true,
+            autoplayTimeout:6000,
+            autoplaySpeed:1000,
+            lazyLoad:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                992:{
+                    items:2
+                }
             }
-        }
-    })
-  });
+        })
+    }
+    
+});
 
